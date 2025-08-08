@@ -1,8 +1,11 @@
 {
-  "build": {
-    "src": "main.py",
-    "use": "@vercel/python"
-  },
+  "devCommand": "uv run fastapi run main.py",
+  "builds": [
+    {
+      "src": "main.py",
+      "use": "@vercel/python"
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
